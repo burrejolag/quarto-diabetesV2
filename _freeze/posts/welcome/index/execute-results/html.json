@@ -1,0 +1,16 @@
+{
+  "hash": "1cc8f023b0380ba3d8c9138da6a24200",
+  "result": {
+    "markdown": "---\ntitle: \"Graficos de Datos:\"\nauthor: \"Brayan Urrejola\"\ndate: \"2023-02-13\"\ncategories: [graphics]\n---\n\n\n### Especificaciones de uso:\nAqui se realiza un manejo de datos representado con graficos.\n\n\n\n\n\n### Resultados enfermedad Diabetes:\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n```\nCantidad de personas que tienen y no tienen diabetes:\n```\n:::\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\ntable(diabe$Outcome)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n\n  0   1 \n497 266 \n```\n:::\n:::\n\n\n### Grafico enfermedad Diabetes:\n\n\n::: {.cell}\n\n```{.r .cell-code}\nbarplot(table(diabe$Outcome),\n        horiz = 'FALSE',\n        col = 'lightblue',\n        border = 'blue',\n        main = 'Resultados de diabetes:',\n        ylab = 'Cantidad de personas:',\n        xlab = 'Corresponde a enfermedad:')\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n```\nSe puede demostrar que mas de la mitad de las mujeres, aproximadamente padecen de la enfermedad diabetes.\n```\n:::\n:::\n\n\n### Histograma edad:\n\n\n::: {.cell}\n\n```{.r .cell-code}\nhist(diabe$Age,\n     col = 'pink',\n     border = 'red',\n     main = 'Cantidad de mujeres por edad:',\n     xlab = 'Edad:',\n     ylab = 'Cantidad de mujeres:')\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-6-1.png){width=672}\n:::\n:::\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n```\nSe puede decir que la mayor cantidad de datos obtenidos son mujeres con edad entre los 20 y 30 años, llegando a la cantidad de casi 300 mujeres dentro de ese rango.\n```\n:::\n:::",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

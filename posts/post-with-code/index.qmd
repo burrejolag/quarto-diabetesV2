@@ -1,0 +1,32 @@
+---
+title: "Informacion Data set"
+author: "Brayan Urrejola"
+date: "2023-02-13"
+categories: [information]
+image: "image.jpg"
+---
+
+### Especificaciones de datos:
+
+Este Data Set contiene datos de pacientes que solo son de mujeres mayores de 21 años de raza indigena Pima.
+
+La finalidad de estos datos es predecir mediante un diagnostico si un paciente tiene diabetes, basado en ciertas medidas y variables.
+
+| Nombre Columna               | Descripcion                                                                                                           | Tipo de variable |
+|-------------------------|-----------------------------|:----------------:|
+| **Pregnancies**              | Muestra la cantidad de veces que el paciente ha tenido un embarazo, representado con un numero entero.                |     Numerica     |
+| **Glucose**                  | Muestra la cantidad de glucosa en la sangre que contiene el paciente en su cuerpo, representado con un numero entero. |     Numerica     |
+| **BloodPressure**            | Muestra la medida de la presion arterial del paciente, representado con un numero entero.                             |     Numerica     |
+| **SkinThickness**            | Muestra en cantidad el grosor de la piel del paciente, representado con un numero entero.                             |     Numerica     |
+| **Insulin**                  | Muestra la cantidad de insulina en la sangre que tiene el paciente, representado con un numero entero.                |     Numerica     |
+| **BMI (Body mass index)**    | Muestra el indice de masa corporal del paciente, representado con un numero decimal.                                  | Numerica (float) |
+| **DiabetesPedigreeFunction** | Muestra el porcentaje/nivel de Diabetes del paciente, representado con un numero decimal.                             | Numerica (float) |
+| **Age**                      | Muestra la edad del paciente, representado con un numero entero.                                                      |     Numerica     |
+| **Outcome**                  | Muestra el resultado del paciente, indicando "1" si tiene diabetes y "0" en caso de que no tenga diabetes.            |    Categorica    |
+
+### Tabla de contenidos:
+
+```{r}
+diabe <- read.csv("C:/Users/braya/Desktop/LIVA/diabetes.csv")
+head(diabe)
+```

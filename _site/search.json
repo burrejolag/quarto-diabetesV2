@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "quarto-diabetesV2",
+    "section": "",
+    "text": "Informacion Data set\n\n\n\n\n\n\n\ninformation\n\n\n\n\n\n\n\n\n\n\n\nFeb 13, 2023\n\n\nBrayan Urrejola\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGraficos de Datos:\n\n\n\n\n\n\n\ngraphics\n\n\n\n\n\n\n\n\n\n\n\nFeb 13, 2023\n\n\nBrayan Urrejola\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Informacion Data set",
+    "section": "",
+    "text": "Especificaciones de datos:\nEste Data Set contiene datos de pacientes que solo son de mujeres mayores de 21 años de raza indigena Pima.\nLa finalidad de estos datos es predecir mediante un diagnostico si un paciente tiene diabetes, basado en ciertas medidas y variables.\n\n\n\n\n\n\n\n\nNombre Columna\nDescripcion\nTipo de variable\n\n\n\n\nPregnancies\nMuestra la cantidad de veces que el paciente ha tenido un embarazo, representado con un numero entero.\nNumerica\n\n\nGlucose\nMuestra la cantidad de glucosa en la sangre que contiene el paciente en su cuerpo, representado con un numero entero.\nNumerica\n\n\nBloodPressure\nMuestra la medida de la presion arterial del paciente, representado con un numero entero.\nNumerica\n\n\nSkinThickness\nMuestra en cantidad el grosor de la piel del paciente, representado con un numero entero.\nNumerica\n\n\nInsulin\nMuestra la cantidad de insulina en la sangre que tiene el paciente, representado con un numero entero.\nNumerica\n\n\nBMI (Body mass index)\nMuestra el indice de masa corporal del paciente, representado con un numero decimal.\nNumerica (float)\n\n\nDiabetesPedigreeFunction\nMuestra el porcentaje/nivel de Diabetes del paciente, representado con un numero decimal.\nNumerica (float)\n\n\nAge\nMuestra la edad del paciente, representado con un numero entero.\nNumerica\n\n\nOutcome\nMuestra el resultado del paciente, indicando “1” si tiene diabetes y “0” en caso de que no tenga diabetes.\nCategorica\n\n\n\n\n\nTabla de contenidos:\n\ndiabe <- read.csv(\"C:/Users/braya/Desktop/LIVA/diabetes.csv\")\nhead(diabe)\n\n  Pregnancies Glucose BloodPressure SkinThickness Insulin  BMI\n1           6     148            72            35       0 33.6\n2           1      85            66            29       0 26.6\n3           8     183            64             0       0 23.3\n4           1      89            66            23      94 28.1\n5           0     137            40            35     168 43.1\n6           5     116            74             0       0 25.6\n  DiabetesPedigreeFunction Age Outcome\n1                    0.627  50       1\n2                    0.351  31       0\n3                    0.672  32       1\n4                    0.167  21       0\n5                    2.288  33       1\n6                    0.201  30       0"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Graficos de Datos:",
+    "section": "",
+    "text": "Especificaciones de uso:\nAqui se realiza un manejo de datos representado con graficos.\n\n\nResultados enfermedad Diabetes:\n\n\nCantidad de personas que tienen y no tienen diabetes:\n\n\n\ntable(diabe$Outcome)\n\n\n  0   1 \n497 266 \n\n\n\n\nGrafico enfermedad Diabetes:\n\nbarplot(table(diabe$Outcome),\n        horiz = 'FALSE',\n        col = 'lightblue',\n        border = 'blue',\n        main = 'Resultados de diabetes:',\n        ylab = 'Cantidad de personas:',\n        xlab = 'Corresponde a enfermedad:')\n\n\n\n\n\n\nSe puede demostrar que mas de la mitad de las mujeres, aproximadamente padecen de la enfermedad diabetes.\n\n\n\n\nHistograma edad:\n\nhist(diabe$Age,\n     col = 'pink',\n     border = 'red',\n     main = 'Cantidad de mujeres por edad:',\n     xlab = 'Edad:',\n     ylab = 'Cantidad de mujeres:')\n\n\n\n\n\n\nSe puede decir que la mayor cantidad de datos obtenidos son mujeres con edad entre los 20 y 30 años, llegando a la cantidad de casi 300 mujeres dentro de ese rango."
+  }
+]
