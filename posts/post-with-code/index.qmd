@@ -1,5 +1,5 @@
 ---
-title: "Informacion Data set"
+title: "Informacion Data set Diabetes"
 author: "Brayan Urrejola"
 date: "2023-02-13"
 categories: [information]

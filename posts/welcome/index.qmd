@@ -3,9 +3,11 @@ title: "Graficos de Datos:"
 author: "Brayan Urrejola"
 date: "2023-02-13"
 categories: [graphics]
+image: "image.jpg"
 ---
 
 ### Especificaciones de uso:
+
 Aqui se realiza un manejo de datos representado con graficos.
 
 ```{r}
@@ -18,10 +20,7 @@ diabe <- read.csv("C:/Users/braya/Desktop/LIVA/diabetes.csv")
 
 ### Resultados enfermedad Diabetes:
 
-```{r}
-#| echo: false
-cat("Cantidad de personas que tienen y no tienen diabetes:\n")
-```
+Cantidad de personas que tienen y no tienen diabetes:
 
 ```{r}
 table(diabe$Outcome)
@@ -39,10 +38,7 @@ barplot(table(diabe$Outcome),
         xlab = 'Corresponde a enfermedad:')
 ```
 
-```{r}
-#| echo: false
-cat("Se puede demostrar que mas de la mitad de las mujeres, aproximadamente padecen de la enfermedad diabetes.")
-```
+Se puede demostrar que mas de la mitad de las mujeres, aproximadamente padecen de la enfermedad diabetes.
 
 ### Histograma edad:
 
@@ -55,7 +51,4 @@ hist(diabe$Age,
      ylab = 'Cantidad de mujeres:')
 ```
 
-```{r}
-#| echo: false
-cat("Se puede decir que la mayor cantidad de datos obtenidos son mujeres con edad entre los 20 y 30 años, llegando a la cantidad de casi 300 mujeres dentro de ese rango.")
-```
+Se puede decir que la mayor cantidad de datos obtenidos son mujeres con edad entre los 20 y 30 años, llegando a la cantidad de casi 300 mujeres dentro de ese rango.

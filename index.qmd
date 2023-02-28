@@ -1,5 +1,5 @@
 ---
-title: "quarto-diabetesV2"
+title: "RSTUDIO: Diabetes"
 listing:
   contents: posts
   sort: "date desc"
